@@ -7,7 +7,7 @@ def hello(array)
     i += 1
   end
 end
-
+binding.pry
 
 hello(["Tim", "Tom", "Jim"]) { |name| puts "Hi, #{name}" }
 
@@ -20,4 +20,4 @@ def greetings(array)
   end
 end
 
-greetings(["john", "Junior", "jim", "mark"])
+greetings(["john", "Junior", "jim", "mark"]) { |name| puts "Hi, #{name}" }
